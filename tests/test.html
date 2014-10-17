@@ -1,0 +1,17 @@
+<title>Check the console.</title>
+<script src="../dist/setalg-es6.js"></script>
+<script>
+
+    var a = new Set([1, 2, 3]);
+    var b = new Set([3, 4, 5]);
+
+    console.log( [ e for ( e of setalg.u( a, b ) ) ] );
+    console.log( [ 1, 2, 3, 4, 5, ] );
+
+    console.log( [ e for ( e of setalg.n( a, b ) ) ] );
+    console.log( [ 3 ] );
+
+    console.log( [ e for ( e of setalg.c( a, b ) ) ] );
+    console.log( [ 1, 2 ] );
+
+</script>
