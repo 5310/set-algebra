@@ -1,0 +1,32 @@
+{
+  "name": "set-algebra",
+  "main": "dist/setalg-es6.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/5310/aifm",
+  "authors": [
+    "Sayantan Chaudhuri <sayantan.chaudhuri+bower@gmail.com>"
+  ],
+  "description": "A set algebra operations library for ES6 sets.",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "es5",
+    "es6",
+    "library",
+    "set",
+    "set-algebra"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "scratch"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "set-algebra",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A set algebra operations library for ES6 sets.",
+  "main": "index.js",
+  "devDependencies": {
+    "browserify": "^5.11.1",
+    "browserify-shim": "^3.7.0",
+    "traceur": "0.0.72",
+    "uglifyify": "^2.5.0"
+  },
+  "scripts": {
+    "build": "./node_modules/traceur/traceur --script ./setalg-es6.js --out setalg-es5.js --modules commonjs",
+    "dist": "browserify ./setalg-es6.js --standalone setalg > ./dist/setalg-es6.js && browserify -t [ uglifyify ] ./setalg-es5.js --standalone setalg > ./dist/setalg-es5.js",
+    "chore": "npm run build && npm run dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/5310/set-algebra.git"
+  },
+  "keywords": [
+    "es5",
+    "es6",
+    "library",
+    "set",
+    "set-algebra"
+  ],
+  "author": {
+    "name": "Sayantan Chaudhuri",
+    "email": "sayantan.chaudhuri+npm@gmail.com",
+    "url": "https:google.com/+SayantanChaudhuri"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/5310/set-algebra/issues"
+  },
+  "homepage": "https://github.com/5310/set-algebra",
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {},
+  "dependencies": {
+    "traceur-runtime": "^0.0.59"
+  }
+}
